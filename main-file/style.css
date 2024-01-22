@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@font-face {
+    font-family: myfont;
+    src: url(Futura-Bold.ttf);
+}
+@font-face {
+    font-family: scndfont;
+    src: url(HelveticaNowText-Regular.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* font-family: 'Orbitron', sans-serif; */
+}
+
+header{
+    width: 100vw;
+    height: 128px;
+position: fixed;
+z-index: 89;
+}
+body{
+    background-color: #F7F7F7;
+}
+nav{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 30px;
+      height: 100%;
+}
+.right-nav-item{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 4.2vw;
+    /* border: 2px solid black; */
+    height: 100%;
+}
+.right-nav-item a{
+    text-decoration: none;
+    color: black;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+.logo svg:nth-child(2){
+    transform: none;
+}
+.logo svg:nth-child(1){
+    display: block;
+
+}
+/* .logo{
+    display: flex;
+   
+    overflow: hidden;
+align-content: center;
+justify-content: center;
+} */
+.logo{
+    /* background-color: red; */
+    height: 83px;
+    overflow: hidden;
+}
+
+/* ONCLICK BAR  */
+.onclick-bars{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    border-radius: 100%;
+    top: -949px;
+    z-index: 9;
+    left: 0;
+}
+.ri-arrow-up-double-line{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 51%;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    /* z-index: 99; */
+}
+.menu-item{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    flex-direction: column;
+    /* padding-top: 20px; */
+    height: 100%;
+    gap: 1.4rem;
+}
+.menu-item h1{
+    font-size: 5vw;
+    font-family: myfont;
+
+}
+
+/* MAIN HEADING  */
+
+.main-heading{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+padding-top: 13rem;
+overflow: hidden;
+}
+.main-heading h1{
+    font-size: 13.3vw;
+    font-family: myfont;
+/* text-align: center; */
+/* line-height: 154px; */
+font-stretch: 150%;
+line-height: 240px;
+}
+
+/* MAIN IMAGE */
+.main-video{
+    height: 100%;
+    width: 100%;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.main-video img{
+    height: 53%;
+    width: 53%;
+} 
+
+/* BUY BTN  */
+.buy-btn{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background-color: #ccc; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    /* bottom: -50%; */
+    right: 30%;
+}
+.buy{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg) ;
+    }
+}
+.text span{
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.buy{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.buy span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+
+}
+
+.two-span{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+
+}
+.header-start .line{
+    height:2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0.6px;
+}
+.header-start{
+    padding: 2px 18px;
+}
+/* IMAGES CARD */
+.images-card{
+    /* border: 2px solid red; */
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 13px;
+      width: 100%;
+      height: 100vh;
+      gap: 1rem;
+}
+.card{
+    width: 33vw;
+    height: 100%;
+    /* background-color: green; */
+}  
+.card:nth-child(1){
+    background: url('../images/card1.webp');
+object-fit: cover;
+position: relative;
+}
+.card:nth-child(2){
+    background: url('../images/card2.webp');
+object-fit: cover;
+}
+.card:nth-child(3){
+    background: url('../images/card3.webp');
+object-fit: cover;
+}
+
+.navigation-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 8px;
+    /* text-align: center; */
+    /* transform: translate(-50%, -50%); */
+    /* margin-top: 50%; */
+    /* position: absolute; */
+    border-radius: 24px;
+    padding: 10px 45px;
+        flex-direction: column;
+    width: min-content;
+
+}
+.wrap{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.3vw;
+}
+.navigation-card:nth-child(1){
+    background-color: #E5F0D6;
+
+}
+
+.navigation-card span{
+    font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+}
+.for-center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.navigation-card span:nth-child(3){
+    font-weight: 800;
+}
+.scnd-col{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      /* opacity: 0; */
+      overflow: hidden;
+      height: 0;
+}
+.scnd-col div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* MAIN TXT  */
+.main-text{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 5px 13px;
+      margin-top:2.6rem ;
+}
+.main-text div{
+    width: fit-content;
+/* border: 3px solid saddlebrown; */
+}
+.left-txt{
+    font-size: 2.4vw;
+    font-family: myfont;
+}
+.right-txt p{
+    font-family: scndfont;
+    font-size: 1.1rem;
+}
+.right-txt p{
+    margin-bottom: 26px;
+}
+.right-txt{
+    padding: 33px 28px;
+}
+.right-txt span{
+    font-family: scndfont;
+    font-size: 1rem;  
+}
+/* PRODUCTS  */
+.products{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      gap: 4rem;
+      margin-top: 8rem;
+}
+
+.product-card p{
+font-family: scndfont;
+text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+}
+.product-card{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      /* gap: 0; */
+}
+.products img{
+    height: 40vw;
+    width: 43vw;
+}
+.row{
+    gap: 4rem;
+}
+/* SWIPER  */
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* border: 3px solid black; */
+  }
+
+.swiper h3{
+    font-size: 3vw;
+    font-family: myfont;
+    width: 70%;
+}
+.second{
+    margin-top: 7rem;
+}
+.main-btn-send{
+    padding: 14px 51px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+.main-btn-send span{
+    font-family: scndfont;
+    font-size: 14px;text-align: center;
+}
+
+.button-send{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+      flex-direction: column;
+      /* border: 4px solid brown; */margin-bottom: 14rem;
+}
+
+form{
+    background-color: black;
+    color: white;
+    padding: 10px 21px;
+}
+form input{
+background-color: transparent;
+border: none!important;
+
+}
+form textarea{
+    background-color: transparent;
+    /* margin: 18px; */
+    border: none;
+}
+form label{
+    font-family: scndfont;
+    
+}
+.wrap-scnd{
+    /* border: 2px solid red; */
+    overflow: hidden;
+    width: min-content;
+    height: 52px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+/* IMPACT  */
+
+.your-impact{
+    display: flex;
+      align-items: flex-start;
+      /* justify-content: center; */
+      gap: 5rem;
+}
+.first-div-impact{
+    width: 28%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.second-div-wrapper{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    width: 64%;
+    gap: 1rem;
+}
+.second-div-wrapper div{
+    width: fit-content;
+    overflow: hidden;
+}
+.first-div-impact p,span{
+    font-family: scndfont;
+
+}
+.first-div-impact p:nth-child(2){
+    margin: 32px 0px;
+    font-size: 1.2rem;
+}
+.first-div-impact p:nth-child(3){
+    margin: 32px 0px;
+    font-size: 1.2rem;
+}
+.first-div-impact h3{
+    font-family: myfont;
+    font-size: 1.8rem;
+}
+.second-div-wrapper div img{
+    background-position: center;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+}
+/* FOOTER  */
+footer{
+    margin-top: 4rem;
+
+}
+.first-row-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.connect-item a{
+text-decoration: none;
+color: black;
+font-family: scndfont;
+font-size: 0.9rem;
+display: block;
+
+}
+.connect-item span{
+    margin: 12px 0;
+font-size: 1rem;
+font-family: scndfont;
+display: block;
+}
+.gritties-item a{
+    text-decoration: none;
+    color: black;
+    font-family: scndfont;
+    font-size: 0.9rem;
+    display: block;
+
+    }
+    .gritties-item span{
+    font-size: 1rem;
+    font-family: scndfont;
+    }
+    .gritties-item{
+        text-align: right;
+    }
+    .gritties-item a:nth-child(2){
+        margin: 12px 0 0 0;
+        
+    }
+    .last-row-footer p{
+font-size: 1.2rem;
+font-family: scndfont;
+    }
+    .last-row-footer{
+margin-top:64px ;
+margin-bottom: 64px;
+        
+    }
+    .para-last-row{
+        width: 72%;
+        text-align: center;
+    }
+    .footer-line{
+        margin-top: 6rem;
+    }
+    .last-row-footer{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    }
